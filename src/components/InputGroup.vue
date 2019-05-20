@@ -44,12 +44,15 @@
 <style>
     .input-container{
         display: inline-block;
+        position: relative;
     }
     .input-body {
         margin: 0 auto;
         border-bottom: 1px solid #ccc;
     }
     .error-handling {
+        position: absolute;
+        width: 200px;
         color: darkred;
         height: 20px;
         margin: 0;

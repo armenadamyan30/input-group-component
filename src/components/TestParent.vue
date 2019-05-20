@@ -5,9 +5,11 @@
                 <img src="../assets/images/child.jpg" alt="">
             </div>
             <div class="text-container">
-                <p>Hugh is</p>
-                <input-group />
-                <p>years old</p>
+                <span class="d-flex input-section">
+                     <span>Hugh is</span>
+                     <input-group />
+                </span>
+                <span class="label">years old</span>
             </div>
         </div>
         <div class="d-flex page-container">
@@ -15,9 +17,11 @@
                 <img src="../assets/images/child.jpg" alt="">
             </div>
             <div class="text-container">
-                <p>Hugh is</p>
-                <input-group />
-                <p>years old</p>
+                <span class="d-flex input-section">
+                     <span>Hugh is</span>
+                     <input-group />
+                </span>
+                <span class="label">years old</span>
             </div>
         </div>
     </div>
@@ -49,10 +53,18 @@
         object-fit: cover;
     }
     .text-container {
+        display: flex;
+        align-items: center;
         line-height: 20px;
         min-width: 300px;
     }
-    .text-container p{
-        margin-bottom: 5px;
+    .text-container .label {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #9d9d9d;
+    }
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
     }
 </style>
